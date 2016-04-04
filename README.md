@@ -8,12 +8,13 @@ tested on PowerPC platform.
 
 If port to another platform, should modify Makefile
 
-<code>
+<pre><code>
 TOOLCHAIN_PREFIX := powerpc-linux-gnu-
 
 SWIG_FLAGS  = -go -gccgo -intgosize 32
 CFLAGS      = -DBINDER_IPC_32BIT -I$(CURDIR)/gobinder
 </code>
+</pre>
 
 -intgosize 32  -- 32bit CPU
 -intgosize 64  -- 64bit CPU

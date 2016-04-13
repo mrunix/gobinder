@@ -16,8 +16,12 @@ CFLAGS      = -DBINDER_IPC_32BIT -I$(CURDIR)/gobinder
 </code>
 </pre>
 
--intgosize 32  -- 32bit CPU
--intgosize 64  -- 64bit CPU
+###-intgosize 32
+32bit CPU
 
--DBINDER_IPC_32BIT  -- Binder Protocol Version 7
+###-intgosize 64
+64bit CPU
+
+###-DBINDER_IPC_32BIT
+Binder Protocol Version 7
 
